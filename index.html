@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Youtube Clone/assets/images/youtube-favicon.ico">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+</head>
+
+<body>
+    <nav class="container-fluid bg-white py-lg-1 py-md-0 py-sm-2 py-2 ">
+        <div class="d-flex flex-wrap align-items-center justify-content-md-between ps-3 p-1">
+            <div class="col d-flex align-items-center col-md-auto">
+                <div class="menu-icon">
+                    <img src="assets/images/svg/menu.svg" id="menu" alt="" class="icon">
+                </div>
+                <img src="assets/images/youtube.png" width="100" class="ms-4" alt="">
+            </div>
+
+            <div class="col col-md-6 col-lg-5 d-none d-md-flex align-items-center justify-content-center">
+                <div class="input-group input-search flex-nowrap col-10">
+                    <input type="text" class="form-control rounded-start-5" placeholder="Search">
+                    <button class="input-group-text rounded-end-5">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="d-flex align-items-center ms-2 mic-icon p-2">
+                        <img src="assets/images/svg/mic.svg" alt="" class="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-auto ">
+                <span class="dots">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </span>
+                <span class="sign-in border border-dark-subtle rounded-5 ms-3 py-1 px-2 fw-medium">
+                    <i class="fa-regular fa-circle-user p-1"></i>Sign in
+                </span>
+
+            </div>
+        </div>
+
+    </nav>
+    <div class="sidebar">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark selected ">
+                    <img class="icon" src="assets/images/svg/home.svg" alt="">
+                    <span class="fw-bold">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <img src="assets/images/svg/shorts.svg" alt="" class="icon">
+                    <span>Shorts</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <img src="assets/images/svg/subscriptions.svg" alt="" class="icon">
+                    <span>Subscriptions</span>
+                </a>
+            </li>
+            <hr>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <img src="assets/images/svg/video_library.svg" alt="" class="icon">
+                    <span>Library</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <img src="assets/images/svg/history.svg" alt="" class="icon">
+                    <span>History</span>
+                </a>
+            </li>
+            <hr>
+            <li>
+                <div class="ps-4 ms-1 side-sign pe-2">
+                    <span>Sign in to like videos, comment,and subscribe.</span>
+                </div>
+                <a href="#" class="nav-link text-dark ps-4 ms-1">
+                    <span class="sign-in border border-dark-subtle rounded-5  p-2 fw-medium">
+                        <i class="fa-regular fa-circle-user p-1 mt-3"></i>Sign in
+                    </span>
+                </a>
+            </li>
+            <hr>
+            <div class="explore">
+                <h6>Explore</h6>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+
+                        <img src="assets/images/svg/trend.svg" alt="" class="icon">
+                        <span>Trending</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/svg/music.svg" alt="" class="icon">
+                        <span>Music</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/svg/live.svg" alt="" class="icon">
+                        <span>Live</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/svg/gaming.svg" alt="" class="icon">
+                        <span>Gaming</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/svg/news.svg" alt="" class="icon">
+                        <span>News</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/svg/sports.svg" alt="" class="icon">
+                        <span>Sports</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/svg/learning.svg" alt="" class="icon">
+                        <span>Learning</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/svg/fashion.svg" alt="" class="icon">
+                        <span>Fashion&Beauty</span>
+                    </a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/svg/add_circle.svg" alt="" class="icon">
+                        <span>Channels</span>
+                    </a>
+                </li>
+            </div>
+
+            <hr>
+            <div class="more">
+                <h6>More from YouTube</h6>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/premium.png" alt="" class="icon">
+                        <span>Premium</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/music.png" alt="" class="icon">
+                        <span>Youtube Music</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/youtube-kids.png" alt="" class="icon">
+                        <span>Youtube Kids</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/images/youtube-tv.png" alt="" class="icon">
+                        <span>Youtube Tv</span>
+                    </a>
+                </li>
+            </div>
+
+            <hr>
+
+        </ul>
+        <div class="sidebar-foot p-3">
+
+            <small>About</small>
+            <small>Press</small>
+            <small>Copyright</small>
+            <small>Contact</small>
+            <small>Creators</small>
+            <small>Developers</small>
+            <small>Advertise</small>
+
+            <br>
+            <br>
+
+            <small>Terms</small>
+            <small>Privacy</small>
+            <small>Policy & Saftey</small>
+
+            <br>
+
+            <small>How YouTube Works</small>
+
+            <br>
+
+            <small>Test new features</small>
+
+            <br>
+            <br>
+
+            <small><i class="fa-solid fa-copyright"></i> 2023 Google LLC</small>
+
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="carousels">
+            <div class="carousel-container d-flex align-items-center me-1">
+                <div class="category-item category-item-active">All</div>
+                <div class="category-item">Live</div>
+                <div class="category-item">Music</div>
+                <div class="category-item">Christmans carol</div>
+                <div class="category-item">Jazz</div>
+                <div class="category-item">Gaming</div>
+                <div class="category-item">Güldür Güldür Show</div>
+                <div class="category-item">Sketch comedy</div>
+                <div class="category-item">Chess</div>
+                <div class="category-item">Classical Music</div>
+                <div class="category-item">History</div>
+                <div class="category-item">News</div>
+                <div class="category-item">Game shows</div>
+                <div class="category-item">Eating</div>
+                <div class="category-item">Humans</div>
+                <div class="category-item">Sports leagues</div>
+                <div class="category-item">History</div>
+                <div class="category-item">News</div>
+                <div class="category-item">Game shows</div>
+                <div class="category-item">Eating</div>
+                <div class="category-item">Humans</div>
+                <div class="category-item">Sports leagues</div>
+            </div>
+        </div>
+        <div class="video-container container-fluid p-5 py-4">
+            <div class="d-flex" style="flex-wrap: wrap; gap: 10px;">
+                <div class="zoom ">
+                    <div class="zoom-wrapper">
+                        <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                            <img src="https://picsum.photos/375/225" width="375" height="225" class="img-fluid video-thumb main-img" alt="">
+                            <div class="card-video-detail mt-2 d-flex p-2 py-0">
+                                <div class="me-2"><img src="https://picsum.photos/200/200" width="40" alt=""></div>
+                                <div>
+                                    <h4>Impressed with Life</h4>
+                                    <div class="channel-name ">Relaxing Asian Spa Music - Topic</div>
+                                    <div>705 views<span class="views">3 days ago</span> </div>
+
+                                </div>
+
+                            </div>
+                            <div class="video-footer p-2">
+                                <div class="video-footer-item">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                    <span>Daha sonra izle</span>
+                                </div>
+                                <div class="video-footer-item text-center">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                    <span>Sıraya ekle</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="zoom ">
+                    <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://picsum.photos/375/225" class="img-fluid video-thumb main-img" alt="">
+                        <div class="card-video-detail mt-2 d-flex p-2 py-0">
+                            <div class="me-2"><img src="https://picsum.photos/200/200" width="40" alt=""></div>
+                            <div>
+                                <h4>Impressed with Life</h4>
+                                <div class="channel-name ">Relaxing Asian Spa Music - Topic</div>
+                                <div>705 views<span class="views">3 days ago</span> </div>
+
+                            </div>
+
+                        </div>
+                        <div class="video-footer p-2">
+                            <div class="video-footer-item">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                <span>Daha sonra izle</span>
+                            </div>
+                            <div class="video-footer-item text-center">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                <span>Sıraya ekle</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="zoom ">
+                    <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://picsum.photos/375/225" class="img-fluid video-thumb main-img" alt="">
+                        <div class="card-video-detail mt-2 d-flex p-2 py-0">
+                            <div class="me-2"><img src="https://picsum.photos/200/200" width="40" alt=""></div>
+                            <div>
+                                <h4>Impressed with Life</h4>
+                                <div class="channel-name ">Relaxing Asian Spa Music - Topic</div>
+                                <div>705 views<span class="views">3 days ago</span> </div>
+
+                            </div>
+
+                        </div>
+                        <div class="video-footer p-2">
+                            <div class="video-footer-item">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                <span>Daha sonra izle</span>
+                            </div>
+                            <div class="video-footer-item text-center">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                <span>Sıraya ekle</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="zoom ">
+                    <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://picsum.photos/375/225" class="img-fluid video-thumb main-img" alt="">
+                        <div class="card-video-detail mt-2 d-flex p-2 py-0">
+                            <div class="me-2"><img src="https://picsum.photos/200/200" width="40" alt=""></div>
+                            <div>
+                                <h4>Impressed with Life</h4>
+                                <div class="channel-name ">Relaxing Asian Spa Music - Topic</div>
+                                <div>705 views<span class="views">3 days ago</span> </div>
+
+                            </div>
+
+                        </div>
+                        <div class="video-footer p-2">
+                            <div class="video-footer-item ">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                <span>Daha sonra izle</span>
+                            </div>
+                            <div class="video-footer-item text-center">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                <span>Sıraya ekle</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+        <div class="shorts-container container-fluid px-5 py-2">
+            <div class="shorts-header pb-3">
+                <img src="assets/images/youtube-shorts.png " alt="" class="icon">
+                <span>Shorts</span>
+            </div>
+
+            <div class="shorts-wrapper">
+                <div class="shorts-item mb-4">
+                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                    src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div>
+                        <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                        <div>7.2M views</div>
+                    </div>
+                </div>
+                <div class="shorts-item mb-4">
+                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                    src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div>
+                        <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                        <div>3.7M views</div>
+                    </div>
+                </div>
+                <div class="shorts-item mb-4">
+                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                    src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div>
+                        <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                        <div>9.2M views</div>
+                    </div>
+                </div>
+                <div class="shorts-item mb-4">
+                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                    src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div>
+                        <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                        <div>5.0M views</div>
+                    </div>
+                </div>
+                <div class="shorts-item mb-4">
+                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                    src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div>
+                        <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                        <div>3.8M views</div>
+                    </div>
+                </div>
+                <div class="shorts-item mb-4">
+                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                    src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div>
+                        <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                        <div>1.6M views</div>
+                    </div>
+                </div>
+                <div class="shorts-item mb-4">
+                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                    src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div>
+                        <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                        <div>2.1M views</div>
+                    </div>
+                </div>
+                <div class="shorts-item mb-4">
+                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                    src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div>
+                        <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                        <div>6.9M views</div>
+                    </div>
+                </div>
+
+
+                <div class="shorts-wrapper down">
+                    <div class="shorts-item mb-4">
+                        <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                        src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div>
+                            <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                            <div>1.8M views</div>
+                        </div>
+                    </div>
+                    <div class="shorts-item mb-4">
+                        <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                        src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div>
+                            <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                            <div>1.0M views</div>
+                        </div>
+                    </div>
+                    <div class="shorts-item mb-4">
+                        <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                        src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div>
+                            <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                            <div>5.6M views</div>
+                        </div>
+                    </div>
+                    <div class="shorts-item mb-4">
+                        <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
+                        src="https://www.youtube.com//embed//UZz0QE8LmeA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div>
+                            <h6 class="mt-2">How Jenna <br>Ortega Got The...</h6>
+                            <div>1.6M views</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <i class="fa-solid fa-chevron-down d-flex justify-content-center" id="down"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="navigator pt-3">
+        <ul class="d-flex justify-content-around align-items-center">
+            <li>
+                <a href="#" class="text-dark">
+                    <div class="d-flex justify-content-center">
+                        <img class="icon" src="assets/images/svg/home.svg" alt="">
+                    </div>
+                    <span class="fw-bold d-block">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-dark">
+                    <div class="d-flex justify-content-center">
+                        <img class="icon" src="assets/images/svg/shorts.svg" alt="">
+                    </div>
+                    <span class=" d-block">Shorts</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-dark">
+                    <div class="d-flex justify-content-center">
+                        <img class="icon" src="assets/images/svg/subscriptions.svg" alt="">
+                    </div>
+                    <span class="d-block">Subscriptions</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
